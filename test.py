@@ -13,5 +13,5 @@ def test_hello():
 
 def test_hello2():
     runner = CliRunner()
-    result = runner.invoke(hello,['--name','Thor','--color','blue'])
+    result = runner.invoke(hello,['--name','Bob','--color','blue'])
     assert 'Bob' in result.output
