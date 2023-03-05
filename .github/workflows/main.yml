@@ -6,9 +6,9 @@ on:
   pull_request:
     branches: [ master ]
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
   steps:
-  - uses: actions/checkout@v3.3.0
+  - name: Checkout
+    uses: actions/checkout@v3.3.0
   - name: Run a single line command
     run: make test
