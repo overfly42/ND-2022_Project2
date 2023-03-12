@@ -32,10 +32,10 @@ stages:
   - job: BuildJob
     pool: myPool
     steps:
-    - task: UsePythonVersion@0
-      inputs:
-        versionSpec: '$(pythonVersion)'
-      displayName: 'Use Python $(pythonVersion)'
+#    - task: UsePythonVersion@0
+#      inputs:
+#        versionSpec: '$(pythonVersion)'
+#      displayName: 'Use Python $(pythonVersion)'
 
     - script: |
         python -m venv antenv
